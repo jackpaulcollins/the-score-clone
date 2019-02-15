@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(180, 140, 30, 0.2); }
   .mainContainer .navBar {
     position: fixed;
@@ -17,7 +17,8 @@
     justify-content: space-between;
     align-content: center;
     height: 70px;
-    background-color: #1e1f21; }
+    background-color: #1e1f21;
+    margin: 0 0 10px 0; }
     .mainContainer .navBar .navBarLeft {
       display: flex;
       width: 500px;
@@ -78,10 +79,9 @@
           border-radius: 5px; }
   .mainContainer .mainContent {
     margin-top: 100px;
-    height: 80%;
+    height: 100%;
     display: flex;
     width: 55%;
-    border: solid 2px white;
     background-color: black;
     justify-content: center;
     flex-wrap: wrap; }
@@ -108,9 +108,9 @@
     .mainContainer .mainContent .primaryColumn {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       margin-right: auto;
       width: 63%;
-      height: 70%;
       border: solid 2px white; }
       .mainContainer .mainContent .primaryColumn .headStory {
         display: flex;
@@ -118,6 +118,45 @@
         width: 565px;
         border: 2px solid red;
         margin: 0 auto 0 auto; }
+      .mainContainer .mainContent .primaryColumn .relatedNews {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        color: white;
+        border: solid white 1px; }
+        .mainContainer .mainContent .primaryColumn .relatedNews .relatedNewsHeader {
+          display: flex;
+          width: 100%;
+          align-content: center;
+          justify-content: center;
+          color: white;
+          border: solid white 1px; }
+        .mainContainer .mainContent .primaryColumn .relatedNews .relatedNewsLinks {
+          display: flex;
+          width: 100%;
+          align-content: center;
+          justify-content: center;
+          justify-content: space-around;
+          color: white;
+          border: solid white 1px; }
+      .mainContainer .mainContent .primaryColumn .subContentRow {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        justify-content: space-around;
+        color: white;
+        border: solid green 1px; }
+        .mainContainer .mainContent .primaryColumn .subContentRow .subContent {
+          display: flex;
+          width: 50%;
+          height: 275px;
+          width: 280px;
+          margin: 10px 0 25px 0;
+          border: solid red 2px; }
     .mainContainer .mainContent .smallColumn {
       display: flex;
       flex-direction: column;

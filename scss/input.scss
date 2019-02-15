@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(180,140,30,0.2);
   //navbar section
   .navBar{
@@ -21,6 +21,7 @@
     align-content: center;
     height: 70px;
     background-color: #1e1f21;
+    margin: 0 0 10px 0;
     .navBarLeft{
       display: flex;
       width: 500px;
@@ -78,7 +79,6 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      // border: solid 2px red;
       margin: 0 75px 0 0 ;
       .downloadPrompt{
         display: flex;
@@ -97,10 +97,10 @@
   //end of navbar section
   .mainContent{
     margin-top: 100px;
-    height: 80%;
+    height: 100%;
     display: flex;
     width: 55%;
-    border: solid 2px white;
+    // border: solid 2px white;
     background-color: black;
     justify-content: center;
     flex-wrap: wrap;
@@ -128,12 +128,15 @@
         }
       }
 
+
+//left hand column
     .primaryColumn{
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       margin-right: auto;
       width: 63%;
-      height: 70%;
+      // height: 80%;
       border: solid 2px white;
         .headStory{
           display: flex;
@@ -142,7 +145,57 @@
           border: 2px solid red;
           margin: 0 auto 0 auto;
         }
-    }
+        .relatedNews{
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          color: white;
+          border: solid white 1px;
+          .relatedNewsHeader{
+            display: flex;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+            color: white;
+            border: solid white 1px;
+          }
+          .relatedNewsLinks{
+            display: flex;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+            justify-content: space-around;
+            color: white;
+            border: solid white 1px;
+          }
+        }
+
+        //beginning of small headline cards
+
+        .subContentRow{
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          align-content: center;
+          justify-content: center;
+          justify-content: space-around;
+          color: white;
+          border: solid green 1px;
+          .subContent{
+            display: flex;
+            width: 50%;
+            height: 275px;
+            width: 280px;
+            margin: 10px 0 25px 0;
+            border: solid red 2px;
+          }
+        }
+      }
+
+
+    //right hand column
     .smallColumn{
       display: flex;
       flex-direction: column;
@@ -156,7 +209,7 @@
           width: 316px;
           border: 2px solid red;
           margin: 0 auto 0 auto;
-        }
+      }
     }
   }
 }
