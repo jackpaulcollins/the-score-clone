@@ -17,48 +17,58 @@
     flex-direction: row;
     width: 100vw;
     justify-content: space-between;
-    height: 75px;
-    // border: solid 2px red;
+    height: 70px;
+    background-color: #1e1f21;
+    border: solid 2px red;
     .navBarLeft{
       display: flex;
+      width: 500px;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      // border: solid 2px green;
+      border: solid 2px green;
       .logo{
         display: flex;
-        // border: solid 2px pink;
-        height: 100%;
-        width:75px;
         img{
           display: flex;
-          height: 100%;
         }
       }
       .menu{
         display: flex;
-        // border: solid 2px yellow;
-      }
-    }
-    .navBarMiddle{
-      display: flex;
-      align-items: center;
-      // border: solid 2px green;
-      width: 300px;
-      .teams{
-        display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        height: 70px;
+        width: 35px;
+        justify-content: column;
         justify-content: space-around;
-        align-items: center;
-        // border: solid 2px green;
-        width: 300px;
-        .team{
+        align-content: center;
+        border: solid 2px green;
+        .menuBar{
           display: flex;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 400;
+          width: 20px;
+          height: 2px;
+          background-color: white;
+          margin: 2px 0;
         }
       }
+      .topNews{
+        display: flex;
+        color: #acacad;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        border-right: 0.5px solid gray;
+      }
+      .leagues{
+        display: flex;
+        justify-content: space-around;
+      .league{
+        display: flex;
+        color: #acacad;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+      }
     }
+
+  }
     .navBarRight{
       display: flex;
       align-items: center;
