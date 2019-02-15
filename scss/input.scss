@@ -13,20 +13,20 @@
   background-color: rgba(180,140,30,0.2);
   //navbar section
   .navBar{
+    position: fixed;
     display: flex;
     flex-direction: row;
     width: 100vw;
     justify-content: space-between;
+    align-content: center;
     height: 70px;
     background-color: #1e1f21;
-    border: solid 2px red;
     .navBarLeft{
       display: flex;
       width: 500px;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-      border: solid 2px green;
+      justify-content: space-around;
       .logo{
         display: flex;
         img{
@@ -41,7 +41,6 @@
         justify-content: column;
         justify-content: space-around;
         align-content: center;
-        border: solid 2px green;
         .menuBar{
           display: flex;
           width: 20px;
@@ -54,17 +53,23 @@
         display: flex;
         color: #acacad;
         font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 10px 12px 0 0 ;
         border-right: 0.5px solid gray;
       }
       .leagues{
+        width: 200px;
         display: flex;
+        justify-content: center;
         justify-content: space-around;
+        padding: 10px 0 0 0;
       .league{
         display: flex;
         color: #acacad;
         font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: bold;
       }
     }
 
@@ -78,9 +83,12 @@
       .downloadPrompt{
         display: flex;
          button{
+           color: white;
+           font-family: 'Open Sans', sans-serif;
+           font-size: 15px;
            height: 40px;
-           background-color: teal;
-           border-radius: 15px;
+           background-color: #0078fd;
+           border-radius: 5px;
          }
       }
       .prompt{
