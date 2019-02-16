@@ -10,7 +10,7 @@
   align-items: center;
   width: 100vw;
   height: 100%;
-  background-color: rgba(180,140,30,0.2);
+  background-color: #1e1f21;
   //navbar section
   .navBar{
     position: fixed;
@@ -100,7 +100,6 @@
     height: 100%;
     display: flex;
     width: 55%;
-    // border: solid 2px white;
     background-color: black;
     justify-content: center;
     flex-wrap: wrap;
@@ -108,7 +107,6 @@
       display: flex;
       width: 100%;
       height: 100px;
-      background: 2px solid red;
       justify-content: center;
       align-items: center;
         p{
@@ -120,11 +118,55 @@
         }
         .box{
           display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
           height: 72px;
           width: 190px;
           margin: 10px;
           border-radius: 4px;
           background-color: #1e1f21;
+          .team1{
+            justify-content: space-around;
+            align-items: center;
+            width: 190px;
+            color: white;
+            display: flex;
+            height: 35px;
+            font-size: 12px;
+            font-weight: bold;
+              img{
+                display: flex;
+                height: 20px;
+              }
+          }
+          .team2{
+            justify-content: space-around;
+            width: 190px;
+            color: white;
+            display: flex;
+            height: 35px;
+            font-size: 12px;
+            font-weight: bold;
+            img{
+              display: flex;
+              height: 20px;
+            }
+            .date{
+              font-weight: 100;
+            }
+          }
+        }
+        .button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 70px;
+          width: 40px;
+          background-color: #1e1f21;
+          color: white;
+          font-weight: bold;
+          border: solid .5px gray;
+          border-radius: 5px;
         }
       }
 
@@ -136,15 +178,42 @@
       justify-content: flex-start;
       margin-right: auto;
       width: 63%;
-      // height: 80%;
-      border: solid 2px white;
+    }
+
         .headStory{
           display: flex;
+          flex-direction: row;
           height: 658px;
-          width: 565px;
-          border: 2px solid red;
-          margin: 0 auto 0 auto;
+          width: 100%;
+          margin: 10px auto 25px auto;
+          border: solid grey 1px;
+          border-radius: 5px;
+          margin: 0 15px 50px 15px;
+          background-image: url("../imgs/lillard.jpg");
+          background-size: cover;
+          .topRow{
+            display: flex;
+            width: 700px;
+            height: 100px;
+            flex-direction: row;
+            justify-content: space-between;
+            color: white;
+            font-weight: bold;
+            .button{
+              display: flex;
+              flex-direction: row;
+            .report{
+              display: flex;
+              width: 100%;
+              height: 100px;
+              align-items: flex-end;
+              justify-content: flex-start;
+
+            }
+          }
         }
+      }
+
         .relatedNews{
           display: flex;
           width: 100%;
@@ -152,14 +221,21 @@
           align-content: center;
           justify-content: center;
           color: white;
-          border: solid white 1px;
+          margin: 0 0 50px 0;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          color: #acacad;
+
           .relatedNewsHeader{
             display: flex;
             width: 100%;
             align-content: center;
             justify-content: center;
-            color: white;
-            border: solid white 1px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            color: #acacad;
+            margin: 0 0 15px 0;
+
           }
           .relatedNewsLinks{
             display: flex;
@@ -167,8 +243,13 @@
             align-content: center;
             justify-content: center;
             justify-content: space-around;
-            color: white;
-            border: solid white 1px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            color: #acacad;
+            border: solid grey .5px;
+            border-radius: 5px;
+            hover: pointer;
+
           }
         }
 
@@ -182,34 +263,123 @@
           justify-content: center;
           justify-content: space-around;
           color: white;
-          border: solid green 1px;
           .subContent{
             display: flex;
             width: 50%;
             height: 275px;
             width: 280px;
             margin: 10px 0 25px 0;
-            border: solid red 2px;
+            border: solid grey 1px;
+            border-radius: 5px;
+            background-image: url("../imgs/lillard.jpg");
+            background-size: cover;
+            .topRow{
+              display: flex;
+              width: 100%;
+              height: 100px;
+              flex-direction: row;
+              justify-content: space-between;
+              color: white;
+              font-weight: bold;
+              font-size: 10px;
+              .report{
+                display: flex;
+                width: 100%;
+                height: 100px;
+                justify-content: flex-start;
+                font-size: 10px;
+                }
+              }
+            }
           }
         }
-      }
 
 
     //right hand column
     .smallColumn{
       display: flex;
       flex-direction: column;
-      align-content: flex-end;
+      justify-content: flex-start;
+      margin-right: auto;
       width: 37%;
-      height: 70%;
-      border: solid 2px white;
+
+
         .headLines {
           display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          color: white;
           height: 341px;
           width: 316px;
-          border: 2px solid red;
-          margin: 0 auto 0 auto;
+          margin: 10px auto 25px auto;
+          background-color: gray;
+          border: solid grey 1px;
+          border-radius: 5px;
+          margin: 0 auto 62px auto;
+          .card-title{
+            width: 315.5px;
+            background-color: #1e1f21;
+            border-radius: 5px;
+            color: #acacad;
+          }
+          ul {
+            margin-left: 25px;
+            li {
+              color: blue;
+              list-style-type: disc;
+            }
+          }
       }
+      .subContentRowRight{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-end;
+        width: 100%;
+        height: 275px;
+        width: 280px;
+        margin: 10px auto 25px auto;
+        border: solid grey 1px;
+        border-radius: 5px;
+        background-image: url("../imgs/cj.jpg");
+        background-size: cover;
+      }
+    }
+
+
+  @media screen and (max-width: 1700px) {
+    .smallColumn {
+      display: none;
+    }
+
+    body{
+      background-color: red;
+    }
+    .primaryColumn{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 1699px) {
+    .smallColumn {
+      display: none;
+    }
+
+    .scoreRow{
+      flex-wrap: wrap;
+      overflow-x: scroll;
+    }
+
+    .headStory{
+      margin-top: 10%;
+      width: 55vw;
+      height: 20vh;
+    }
+
+    .primaryColumn{
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
